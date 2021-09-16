@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+    <title>..::Mi primera pagina::..</title>
+    <meta charset="UTF-8" />
+    <!--
+        Juegos de caracteres : UTF-8, UTF-16, ISO-8859-1, Latin
+    -->
+    <meta name="description" content="Mi primera pagina web" />
+    <meta name="keywords" content="programacion,web,ulima,ciis" />
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32" />
+</head>
+
+<body>
+    <header>
+        <h1>Hola Mundo</h1>
+        <h2>Este es e header de la pagina</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="http://www.google.com">Google</a>
+        <a href="The-Complete-HTML-Cheat-Sheet.pdf" target="_blank">Ver PDF</a>
+        <a href="The-Complete-HTML-Cheat-Sheet.pdf" download>Descargar PDF</a>
+
+    </nav>
+
+    <main>
+        <section>
+            <h2>Seccion 1</h2>
+            <article>
+                <p>Este es un parrafo.<br>
+                    Esta es otra linea
+                </p>
+                <pre>
+                    Este es un              parrafo.<br>
+                    Esta es otra linea
+                </pre>
+                <span>
+                    <p>Este es un parrafo con span.<br>
+                        Esta es otra linea
+                    </p>
+                </span>
+
+                <pre>
+                <code>
+                    <!-- Investigar acerca de los HTML Entities-->
+                    &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;title&gt;Hola MUndo&lt;/title&gt;
+                        &lt;/head&gt;
+
+                        &lt;body&gt;
+                            &lt;h1&gt; Hola Mundo HTML &lt;/h1&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;                    
+                </code>
+            </pre>
+
+            <br>
+            Una bandera &#x1f3f4;&#x200d;&#x2620;&#xfe0f;
+            </article>
+
+            <article>
+                <h3>Etiquetas para dar Enfasis</h3>
+
+                Un <strong>superhéroe</strong> es un <em>personaje de ficción</em> cuyas características superan las del 
+                <i>héroe clásico</i>, generalmente con <u>poderes sobrehumanos</u> aunque no necesariamente, 
+                y entroncado con la <b>ciencia ficción</b>. Generados a finales de los años 1930 en la 
+                industria del comic book <mark>estadounidense</mark>, que contribuyeron a levantar,​han 
+                gozado de multitud de adaptaciones a otros medios, especialmente el cine.                
+
+                <br>
+                <small>
+                INGENIERÍA DE SISTEMAS
+El egresado de la Carrera de Ingeniería de Sistemas está preparado para afrontar los retos y las exigencias de las organizaciones, gracias a su capacidad para integrar los procesos de negocios y de proponer, desarrollar, implementar y gestionar soluciones basadas en tecnologías de información.
+                </small>
+            </article>
+        </section>
+
+        <section>
+            <h3>ETiquetas adicionales</h3>
+            <cite>RIncon del Vago.com</cite>
+            <address>http://www.rincondelvago.com</address>
+            La clase fue a las <time>20:00</time> hrs
+            La clase fue el <time datetime="2021-09-01T20:00">Miercoles 01 de Setiembre del 2021</time>
+        </section>
+
+        <section>
+            <h3>Manejo de imagenes</h3>
+            <p>Uso de etiqueta img</p>
+            <img src="img/html-1.png" width="128" height="128" alt="Imagen 1">
+
+            <p>Uso de etiqueta picture</p>
+            <picture>
+                <source media="(min-width:800px)" srcset="img/html-2.png"/>
+                <source media="(min-width:600px)" srcset="img/html-3.png"/>
+                <source media="(min-width:400px)" srcset="img/html-4.png"/>
+                <img src="img/html-1.png" width="128" height="128" alt="Imagen 1">
+            </picture>
+    
+            <p>USo de figcaption</p>
+            <figure>
+                <img src="img/html-1.png" width="128" height="128" alt="Imagen 1">
+                <figcaption>Titulo de la imagen</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Glosario de terminos</h3>
+            <dl>
+                <dt>CIIS</dt>
+                <dd>Congreso Internacional de Ingenieria de Sistemas</dd>
+            </dl>
+            <dl>
+                <dt>UL</dt>
+                <dd>Universidad de Lima</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h3>Listas</h3>
+            <ol>
+                <li>Pollito</li>
+                <li>Papas fritas</li>
+                <li>Coca Cola</li>
+                <li>Pie de manzana</li>
+            </ol>
+
+            <ul>
+                <li>Pollito</li>
+                <li>Papas fritas</li>
+                <li>Coca Cola</li>
+                <li>Pie de manzana</li>
+                <li>Ceviche</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+    <del>Este es un texto tachado</del>
+    <footer>
+        Derechos Reservados &copy; 2021-2
+        <details>
+            <summary>En este año 2021 se hicieron 3 ciclos</summary>
+            <p>Ciclo de verano 2021-0</p>
+            <p>Ciclo regular 2021-1</p>
+            <p>Ciclo regular 2021-2</p>
+        </details>
+    </footer>
+
+</body>
+
+</html>
