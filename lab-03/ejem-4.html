@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>...::Lab 02::...</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mi primer lab del curso" />
+    <meta name="keywords" content="programacion, web, html, ulima" />
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/lab03.css" type="text/css" />
+   
+    <script>
+        var hoy = new Date();
+        var hora = hoy.getHours();
+
+        var nombre;
+        var saludo;
+
+        nombre = window.prompt("Ingresa tu nombre");
+
+        if ( hora < 12) {
+            saludo = "Buenos dias ...";
+        }
+        
+        if ( hora >=12) {
+            if ( hora < 18)
+                saludo = "Buenas tardes ...";
+            else saludo ="Buenas noches ...";
+        }
+
+        document.writeln("<h1> " + saludo + " " + nombre + "</h1>");
+
+        /*
+        Sentencia while
+        */
+       var max = 10;
+       var i = 0;
+       while ( i < max) {
+           document.writeln("<p>" + i + "</p>");
+           i = i + 1;
+       }
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>...::Lab 02::...</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mi primer lab del curso" />
+    <meta name="keywords" content="programacion, web, html, ulima" />
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/challenge1.css" type="text/css" />
+   
+    <script>
+        var num;
+        var ok = 0;
+
+            while (ok == 0) {
+                num = window.prompt("Ingresa un numero del 1 al 20");
+
+                if (num > 20) {
+                    window.alert("El numero debe estar entre 1 y 20")
+                } else {
+                    ok = 1
+                }
+            }
+
+
+        /*
+        Sentencia while
+        */
+       var max = num;
+       var i = 0;
+       document.writeln("<ul>");
+
+       while ( i <= max) {
+           if ( i%2 == 0) {
+            document.writeln("<li class='par'>" + i + "</li>")
+           } else {
+            document.writeln("<li class='impar'>" + i + "</li>")
+           }
+           i = i + 1;
+       }
+       document.writeln("</ul>");
+
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
