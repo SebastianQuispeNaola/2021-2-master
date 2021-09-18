@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>...::Lab 04::...</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mi primer lab del curso" />
+    <meta name="keywords" content="programacion, web, html, ulima" />
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/lab04.css" type="text/css" />
+
+    <script>
+        document.writeln("<h1>Arreglos</h1>")
+        //Declarar
+        var a0 = new Array(); //Arreglo vacio
+        var a1 = new Array(5); //Arreglo de 5 elementos
+        //Inicializar
+        for (var i=0; i< a1.length; i++){
+            a1[i] = i;
+        }
+        document.writeln("<p>El arreglo " + a1+ "</p>")
+
+        //Todo junto: Declarar e Inicializar
+        var a3 = [2,3,4,5,6]
+        
+        //Tipo especial de FOR
+        for ( var elem in a3){
+            document.write("<p>elem ="+ elem + " "+ a3[elem] + "</p>");
+        }
+
+        //Pegar los elementos del arreglo
+        document.write("<p> Juntar elementos " + a3.join("x")+ "</p>");
+
+        //Saber la posicion de un elemento
+        document.write("<p> Buscar elemento " + a3.indexOf(2)+ "</p>");
+
+        var a4 = [2,4,6,8,1,3,5,7,9]
+        document.write("<p>El arreglo ANTES "+ a4 + "</p>")
+        // Ordenar SORT ascendente
+        document.write("<p>Ordenar "+ a4.sort() + "</p>")
+        document.write("<p>El arreglo DESPUES "+ a4 + "</p>")
+
+        var a5 =["Manzana", "Fresa", "Palta", "Durazno", "Mandarina"]
+        document.write("<p>El arreglo ANTES "+ a5 + "</p>")
+        // Ordenar SORT ascendente
+        document.write("<p>Ordenar "+ a5.sort() + "</p>")
+        document.write("<p>El arreglo DESPUES "+ a5 + "</p>")
+
+        //OJO
+        //El metodo REVERSE voltea el arreglo 
+        document.write("<p>Ordenar "+ a5.reverse() + "</p>")
+
+        var a6 = [2,4,6,8,1,3,5,7,9]
+        document.write("<p>Ordenar "+ a6.reverse() + "</p>")
+
+        var a7 =[2,4,6,8,1,3,5,7,9]
+        document.write("<p>Ordenar "+ a7.sort( function(a,b){ return b-a}) + "</p>")
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="css/lab04.css" type="text/css" />
 
     <script>
-        //Generar dados y numero aleatorio
-        var aleat = Math.random();
-        document.writeln("<p>"+ aleat+ "</p>")
-
-        var dado= Math.floor(1 + Math.random() * 6)
-        document.writeln("<p> Valor del dado"+ dado)
-        document.writeln("<img src='img/"+dado+".jpg'>")
+        var a1 = new Array(13);
+        for ( var i=0; i< a1.length; i++){
+            a1[i] = i;
+            //document.write("<p>"+ i + "</p>")
+            for (j=0;j< a1.length;j++) {
+                document.write("<p>"+ i*j + "</p>")
+            }
+        }
 
     </script>
 
