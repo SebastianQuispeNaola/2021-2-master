@@ -1,0 +1,113 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+}
+
+h1 {
+    background-color: orange;
+}
+
+h2 {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    font-size: x-small;
+    /*
+    position:fixed;
+    */
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;    
+}
+
+.agregado {
+    background-color: yellow;
+}
+.reemplazo {
+    background-color: red;
+}
+
+.lp  {
+    font-style: oblique;
+    color: green;
+    list-style-type: circle;
+}
+
+.jvm {
+    list-style-type: square;
+}
+
+
+#caja-padre {
+    display: flex;
+    width: 100%;
+    border-style: double;
+    border-color: blue;
+}
+
+#lateral {
+    flex: 1;
+    background-color:#5ACBFB;
+    margin-top: 2em;
+}
+
+#contenido {
+  flex: 1;
+  background-color: white;
+    background-color: darkgrey;
+    margin-top: 2em;
+    column-count: 1;
+ 
+}
+
+#rpta1 {
+    border-radius:  10px;
+    border-style: solid;
+    border-color: red;
+    margin: 0 auto;
+    width: 100%;
+}
+#rpta2 {
+    border-radius:  10px;
+    border-style: solid;
+    border-color: green;
+    margin: 0 auto;
+    width: 100%;
+}
+
+b {
+    color: red;
+}
+
+form {
+    background-color: #F2A955;
+    margin: 0 auto;    
+    width: 80%;
+}
+
+form * {
+    margin-left: 3em;
+}
+
+
+
+.loquesea {
+    text-align: right;
+}
+
+.otracosa {
+    text-align: left;
+}
+
+img  {
+    position: fixed; 
+    top: 300px; 
+    right: 0px;  
+}

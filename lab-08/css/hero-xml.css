@@ -1,0 +1,21 @@
+h1 {
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+}
+
+img {
+    border-radius:  10px;
+    float: left;
+    margin: 0px 10px;    
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+hr {
+    clear: both;
+    display : hidden;
+}

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+
+    <body class="container">
+        <h1>Aplicacion - Mis Gastos</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <form>
+                    <div>
+                        <label class="form-label">Descripción</label>
+                        <input id="gastos-descripcion" class="form-control" type="text"/>
+                    </div>
+                    <div>
+                        <label class="form-label">Monto</label>
+                        <input id="gastos-monto" class="form-control" type="number"/>
+                    </div>
+                    <div>
+                        <label class="form-label">Fecha</label>
+                        <input id="gastos-fecha" class="form-control" type="date"/>
+                    </div>
+                    <button id="but-agregar" type="button" class="btn btn-primary mt-2">Agregar</button>
+                </form>
+            </div>
+
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Descripción</th>
+                            <th>Monto</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datos">
+                        <!-- El formato debe ser asi
+                        <tr>
+                            <td>Descripcion - Texto </td>
+                            <td>100</td>
+                            <td>01/01/21</td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm"> - </button>
+                            </td>
+                        </tr> 
+                        -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="mensaje"  class="alert alert-danger alert-dismissible fade show"  style="display: none;">
+             Error al llenar los datos.
+            <button id="but-cerrar" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                2021-2 | Programación Web | Universidad de Lima
+            </div>
+        </div>
+        
+        <script src="js/fetch.js"></script>
+    </body>
+</html>

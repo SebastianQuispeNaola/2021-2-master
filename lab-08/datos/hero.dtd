@@ -1,0 +1,4 @@
+<!ELEMENT superheroe (nombre,descripcion,imagen)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>

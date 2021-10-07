@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>...:: Aprendiendo DOM::...</title>
+    <link rel="stylesheet" href="./css/dom.css"/>
+  </head>
+  <body>
+    <h1 class="loquesea">Lenguajes de Programacion</h1>
+    <p>El modelo de objeto de documento (DOM) es una API para los documentos HTML. 
+      Permite una representación estructurada del documento y define de que 
+      manera se puede acceder y modificar la estructura, estilo y contenido.</p>
+    <br><br>
+    <p>Manipular el arbol DOM con <b>JavaScript</b> ... </p>
+
+    <form action="#" method="GET">
+      <p>Completa los siguientes datos:</p>
+      <label>Lenguaje de Programación</label>
+      <input type="text" name="lengpro" id="lengpro"/>
+      <br>
+      <input type="radio" id="lpant" name="tipo" value="antiguo">
+      <label for="antiguo">Antiguo</label><br>
+      <input type="radio" id="lpmod" name="tipo" value="moderno">
+      <label for="moderno">Moderno</label><br>
+
+      <input type="button" value="Insertar al final" onclick="agregar()"/>
+      <input type="button" value="Insertar antes" onclick="agregarAntes()"/>
+      <input type="button" value="Reemplazar" onclick="reemplazar()"/>
+      <input type="button" value="Eliminar" onclick="eliminar()"/>
+      <input type="reset" value="Limpiar"/>
+    </form>
+
+    <div id="lateral"></div>
+
+    <div id="contenido"><h2>Los antiguos</h2>
+        <p>La lista lenguajes comerciales</p>
+        <ul class="lp" id="antiguo">
+            <li>Java</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Java Script</li>
+            <li>Visual Basic</li>
+            <li>Power Builder</li>
+            <li>PHP</li>
+            <li>Perl</li>
+            <li>C</li>
+            <li>Cobol</li>
+            <li>Fortran</li>
+            <li>PL/1</li>
+            <li>Pascal</li>
+        </ul>
+        <h2>Los modernos</h2>
+        <p>Esta lista es referencial (de lo que me acuerdo).</p>
+        <ul class="lp jvm" id="moderno">
+            <li>Go</li>
+            <li>Kotlin</li>
+            <li>Ceylon</li>
+            <Li>Swift</Li>
+            <Li>R</Li>
+            <li id="F">Rust</li>
+            <li>Objective-C</li>
+            <li>Scala</li>
+            <li>Groovy</li>
+            <li>Fantom</li>
+            <li>Clojure</li>
+        </ul>
+      </div>
+      <div id="contenido2">
+        <h2>Referencias</h2>
+        <ul>
+            <li><a href="https://consejerodigital.com/lenguajes-jvm/">Lenguajes JVM</a></li>
+            <li><a href="https://es.bitdegree.org/tutoriales/lenguajes-de-programacion/">Indice TIOBE</a></li>
+        </ul>
+        <h2>Resultados</h2>
+        <section id="rpta1"></section>
+        <section id="rpta2"></section>
+      </div>
+    <footer>
+        &copy; Programacion Web 2021-2
+    </footer>
+    <!-- 
+    Aqui declaramos los Scripts
+    -->
+    <script src="js/dom.js"></script>
+   
+  </body>
+</html>
