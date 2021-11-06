@@ -1,0 +1,20 @@
+
+<% p1.forEach(  function(s) { %>
+    <tr>
+        <td> <%= s.codigo %></td>
+        <td> <%= s.nombre %></td>
+        <td> <%= s.edad %></td>
+        <td>
+            <form action="eliminar" method="post">
+                <input type="hidden" name="id" value=<%= s.id %> >
+                <button id="but-eliminar" type="button" class="btn btn-danger btn-sm" onclick="submit();"> Eliminar </button>
+            </form>    
+        </td>
+        <td>
+            <form action="editar" method="post">
+                <input type="hidden" name="id" value=<%= s.id %> >
+                <button id="but-editar" type="button" class="btn btn-warning btn-sm" onclick="submit();"> Editar </button>
+            </form>    
+        </td>            
+    </tr>
+<% }) %>

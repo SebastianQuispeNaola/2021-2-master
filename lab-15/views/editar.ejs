@@ -1,0 +1,21 @@
+<% p0.forEach(  function(s) { %>
+
+<form id="myForm" action="actualizar" method="post">
+    <div>
+        <label class="form-label">Codigo</label>
+        <input id="form-codigo" class="form-control" type="text" name="codigo" 
+                 value="<%- s.codigo %>" readonly />
+    </div>
+    <div>
+        <label class="form-label">Nombre</label>
+        <input id="form-nombre" class="form-control" type="text" name="nombre" 
+                value="<%= s.nombre %>" />
+    </div>
+    <div>
+        <label class="form-label">Edad</label>
+        <input id="form-edad" class="form-control" type="number" name="edad" 
+            value="<%= s.edad %>" />
+    </div>
+    <button id="but-actualizar" type="button" class="btn btn-primary mt-2" onclick="submit();">Actualizar</button>
+</form>
+<% }) %>

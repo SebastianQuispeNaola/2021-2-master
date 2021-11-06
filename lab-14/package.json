@@ -1,0 +1,16 @@
+{
+  "name": "lab-14",
+  "version": "1.0.0",
+  "description": "Mi primer acceso a un ORM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jin",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.8.0"
+  }
+}
