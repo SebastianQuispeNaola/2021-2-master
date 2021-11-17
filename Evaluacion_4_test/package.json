@@ -1,0 +1,11 @@
+{
+  "name": "evaluacion_4_test",
+  "version": "1.0.0",
+  "description": "Proyecto con NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RQN",
+  "license": "ISC"
+}

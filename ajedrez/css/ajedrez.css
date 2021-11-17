@@ -1,0 +1,67 @@
+body {
+    background-color: gray;
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.columna {
+    float: left;
+    width: 50%;
+  }
+
+.vacio {
+    border: white 1px solid;
+    background-color: white;
+}
+
+.blanco {
+    background-color: white;
+    color: white;
+}
+
+.negro {
+    background-color: black;
+    color: black;
+}
+
+td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .rotado {
+    writing-mode:  horizontal-tb;
+    transform: rotate(-180deg);
+  }
+
+  .nombre {
+      color: blue;
+      font-weight: bold;
+  }
+
+table {
+    border-collapse: collapse;
+}
+
+.bordearriba {
+    border-top: medium double red;
+}
+
+.bordeabajo {
+    border-bottom: medium double red;
+}
+
+.bordeizquierdo {
+    border-left: medium double red;
+}
+
+.bordederecho {
+    border-right: medium double red;
+}

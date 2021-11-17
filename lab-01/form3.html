@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>..::Mi Formulario con HTML5::..</title>
+    <meta charset="UTF-8" />
+    <!--
+        Juegos de caracteres : UTF-8, UTF-16, ISO-8859-1, Latin
+    -->
+    <meta name="description" content="Mi primera pagina web" />
+    <meta name="keywords" content="programacion,web,ulima,ciis" />
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32" />
+</head>
+
+<body>
+
+    <form action="xyz" method="get" id="MyForm">
+        <p>
+            <label>Nombre:
+                <input type="text" size="25" maxlength="80" name="nombre"/>
+            </label>
+        </p>
+
+        <p>
+            <label>Escoge un color
+                <input type="color" name="micolor">
+            </label>
+        </p>
+
+        <p>
+            <label>Ingresa la fecha de tu cumpleaños
+                <input type="date" name="mifecha"/>
+            </label>
+        </p>
+
+        <p>
+            <label>Ingresa el datetime de algo
+                <input type="datetime-local" name="midatetime"/>
+            </label>
+        </p>
+
+        <p>
+            <label>EMail:
+                <input type="email" size="25" name="correo" placeholder="nombre@dominio"/>
+            </label>
+        </p>
+        <p>
+            <label>
+                En que mes estamos
+                <input type="month">
+            </label>
+        </p>
+
+        <p>
+            <label>Ingresa tu nota esperada ...
+            <input type="number" min="0" max="20" step="1" value="11" />
+        </label>
+        </p>
+
+        <p>
+            <label>Ingresa un rango ...
+                <input type="range" min="0" max="20" />
+            </label>
+        </p>
+
+        <p>
+            <label>Ingresa un URL de tu universidad...
+                <input type="url"  />
+            </label>
+        </p>
+
+        <p>
+            <!-- Esta es dificil-->
+            <!-- el pattern usa Regular Expressions-->
+            <label>Ingresa tu numero de telefono con el prefijo de ciudad
+                <input type="tel" placeholder="(###) ###-####" 
+                pattern="\(\d{3}\) +\d{3}-\d{4}" />
+            </label>
+        </p>
+
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+
+    </form>
+
+</body>
+
+</html>        

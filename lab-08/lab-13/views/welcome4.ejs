@@ -1,0 +1,14 @@
+<h1>Esta es una vista medio rara ...</h1>
+
+<h3>La frase del dia</h3>
+<p><%= p2 %></p>
+
+<p>La cantidad de visitas a esta pagina es</p>
+<%= contadorVista %>
+
+<h3>La lista de superheroes</h3>
+<% p1.forEach(  function(s) { %>
+    <p>Nombre : <%= s.name %></p>
+    <p>Organizacion : <%= s.organizacion %></p>
+
+<% }) %>

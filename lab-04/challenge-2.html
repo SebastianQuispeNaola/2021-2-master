@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>...::Lab 02::...</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mi primer lab del curso" />
+    <meta name="keywords" content="programacion, web, html, ulima" />
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/challenge-2.css" type="text/css" />
+
+    <script type="text/javascript">
+        var elefantes = prompt("Cuantos elefantes quieres (1-5) ? ")
+        var cantidad;
+        var elef = "elefante"
+        var balance = "balanceaba"
+        var veia = "veia"
+        var fue = "fue"
+
+        document.writeln("<h1>Los elefantes</h1>")
+        for (var i=1; i <= elefantes; i++) {
+            cantidad = letras(i) 
+            document.writeln("<p>" + "<strong>" + cantidad + "</strong> " + elef + " se " + balance + " sobre la tela de una araña</p>")
+            document.writeln("<br>")
+            document.writeln("<p>Como " +  veia + " que resistia " + fue + " a llamar a otro elefante mas ...</p>")
+            document.writeln("<br>")
+
+            if ( i == 1 ) {
+                elef = elef + "s"
+                balance = balance + "n"
+                veia = veia + "n"
+                fue = fue + "ron"
+            }
+        }
+
+        function letras(i) {
+            switch ( i ) {
+                case 1:
+                    return "Un";
+                    break;
+                case 2:
+                    return "Dos"
+                    break;
+                case 3:
+                    return "Tres"
+                    break;
+                case 4:
+                    return "Cuatro"
+                    break;
+                case 5:
+                    return "Cinco"
+                    break;
+                default:
+                    return "Muchos"
+                    break;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
