@@ -1,12 +1,12 @@
 {
   "name": "ev4",
   "version": "1.0.0",
-  "description": "Evaluacion 4 ciclo 2021-2",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jin",
+  "author": "RSQN",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
