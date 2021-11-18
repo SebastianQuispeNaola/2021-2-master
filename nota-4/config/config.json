@@ -1,8 +1,8 @@
 {
   "development": {
-    "username": "te-estamos-vigilando",
-    "password": "asi-que-no-intentes-copiar",
-    "database": "nota4",
+    "username": "postgres",
+    "password": "123456789",
+    "database": "nota-4",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
