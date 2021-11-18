@@ -11,17 +11,28 @@ const nota = models.Nota;
  * Nombre :  Ricardo Sebastian Quispe Naola
  * Codigo :  20161177
  ******************************************/
-/*
+
 const actualiza = async (req, res) =>{
     console.log ("Inicio de update")
 
     return nota.update(
         {
-            id = id 
-            tipo = tipo
-            peso = pes
+            Alumno = alun,
+            Nota = not,
+            Peso = pes,
             //No se muestra campos de fecha
+        },
+        {
+            where : {
+                codigo : cod
+            }
         }
     )
+    .then( (resultado) => {
+        console.log("Registro actualizado")
+        console.log(resultado)
+    })
+    console.log("==> Fin de update")
 }
-*/
+
+module.exports = actualiza
