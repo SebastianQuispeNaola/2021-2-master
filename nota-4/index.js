@@ -15,16 +15,27 @@ La reglas:
 const express = require("express");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
+const multer = require("multer");
+const pg = require("pg");
+const HSTORE= require("pg-hstore");
+const sequelize = require("sequelize");
+
 
 // Dependencias
 const r1 = require("./routes/rptas.js");
+const { HSTORE } = require('sequelize');
 
 
 // instanciar Express
 const app = express();
-app.set('port', process.env.port || 3000);
+app.set('port', process.env.port || 5000);
 app.set('env','development'); // test stage preview production
 
+// Motor de plantillas
+app.set('view cache', "false");
+app.set("view engine", "ejs");
+app.set("views",__dirname + "/views");
+app.set("layout","../layouts/plantilla1");
 
 // La aplicacion debe estar en ...
 app.use("/", r1);

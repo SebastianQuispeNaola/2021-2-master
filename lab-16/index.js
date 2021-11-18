@@ -50,6 +50,8 @@ app.use( session( {
 app.use( express.static( __dirname + "/public"));
 
 // La aplicacion debe estar en ...
+
+
 // Esta parte la hizo el alumno 1
 app.use("/", r1);
 

@@ -4,6 +4,8 @@ const Op = Sequelize.Op;
 const models = require("../models");
 const usr = models.Usuario;
 
+
+
 const actualiza = async (cod, nom, eda) => {
     console.log("==> INicio de update")
 
